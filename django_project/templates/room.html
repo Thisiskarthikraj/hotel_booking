@@ -1,0 +1,38 @@
+{% load static %}
+{% include 'index.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block css %}
+    <link rel="stylesheet" href="{% static 'css/style5.css' %}">
+    {% endblock css %}
+
+    {% block title %}
+    <title>Room</title>
+    {% endblock title %}
+
+</head>
+<body>
+    {% block content %}
+    <h1>Available Rooms</h1>
+    <ul class="ul1">
+    {% for room in object_list %}
+        <li class="li1">
+            Room {{ room.room_number }} - <a href="{% url 'book_room' room.id %}">Book This Room</a>
+        </li>
+    {% empty %}
+        <li class="li1">No available rooms</li>
+    {% endfor %}
+    </ul>
+    <footer>
+        <div class="foot">
+            <p class="foot">&copy; 2023 HotelX. All rights reserved</p>
+        </div> 
+        </footer>
+    {% endblock content %}
+    
+</body>
+</html>

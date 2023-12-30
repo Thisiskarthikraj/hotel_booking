@@ -1,0 +1,82 @@
+/* styles.css */
+
+
+
+
+main {
+    padding: 20px;
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.about-image-card,
+.about-review-card {
+    background-color: #fff; /* White background for cards */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-image {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.review {
+    margin-bottom: 20px;
+}
+
+.review h2 {
+    color: #186c3c; /* Darker green for headings */
+}
+
+.review p {
+    font-style: italic;
+}
+
+.review-author {
+    text-align: right;
+    font-weight: bold;
+    color: #555;
+}
+/* styles.css */
+.foot{
+    background-color: seagreen;
+    text-align: center;
+    
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color:seagreen /* Change to your preferred heading color */
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #555; /* Change to your preferred subheading color */
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+.a:hover{
+
+    border: solid seagreen;
+    
+}

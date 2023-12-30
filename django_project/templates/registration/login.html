@@ -1,0 +1,28 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static  'css/style2.css' %}">
+    {% endblock css %}
+{% block title %}
+<title>Log In</title>
+{% endblock title %}
+
+{% block content %}
+
+<div class="c">
+    <h2 class="log">LOG IN</h2>
+    
+<form action="" method="post">{% csrf_token %}
+    {{ form.as_p }}
+<button type="submit" class="bt btn-success">log in</button>
+</form>
+
+</div>
+<footer>
+    <div class="foot">
+        <p class="foot">&copy; 2023 HotelX. All rights reserved</p>
+    </div> 
+    </footer>
+
+{% endblock %}

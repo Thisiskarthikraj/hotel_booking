@@ -1,0 +1,54 @@
+{% include 'index.html' %}
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>About HotelX Booking System</title>
+    {% endblock title %}
+    {% block css %}
+    <link rel="stylesheet" href="{% static  'css/style4.css' %}">
+    {% endblock css %}
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Your navigation bar code goes here -->
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-us-section">
+            <div class="container">
+                <h2>About Hotel X</h2>
+                <p>Welcome to Hotel X, where comfort meets luxury.</p>
+                <p>At Hotel X, we pride ourselves on providing an unparalleled hospitality experience. With a legacy spanning over [number of years], we've been committed to creating memorable stays for our guests.</p>
+                <h3>Our Story</h3>
+                <p>Founded on the principle of delivering exceptional service, Hotel X began as a vision to redefine hospitality. Over the years, we've evolved, but our dedication to offering personalized care and attention to detail remains unwavering.</p>
+                <h3>Our Mission</h3>
+                <p>We strive to be more than just a place to stay; we aim to be a home away from home for every guest. Our mission is to exceed expectations, ensuring each visitor leaves with unforgettable memories.</p>
+                <h3>Our Commitment to Quality</h3>
+                <p>From our meticulously designed rooms to our attentive staff, every aspect of Hotel X reflects our commitment to excellence. We meticulously curate every detail to provide an environment that ensures relaxation and enjoyment.</p>
+                <h3>Community and Sustainability</h3>
+                <p>We are deeply rooted in our community and dedicated to sustainable practices. We actively engage in local initiatives and prioritize environmentally-friendly practices to minimize our footprint.</p>
+                <h3>Your Experience Matters</h3>
+                <p>Your satisfaction is our priority. We're dedicated to ensuring your experience at Hotel X is nothing short of exceptional. We invite you to discover the warmth and elegance that defines us.</p>
+            </div>
+       
+    </main>
+    {% block content %}
+
+
+    <footer>
+    <div class="foot">
+        <p class="foot">&copy; 2023 HotelX. All rights reserved</p>
+    </div> 
+    </footer>
+    {% endblock content %}
+</body>
+</html>

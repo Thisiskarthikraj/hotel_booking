@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(242, 247, 245);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+/* Your custom CSS file or style section */
+
+/* Reduce the height of the carousel */
+.carousel-item img {
+    max-height: 300px; /* Set your desired maximum height */
+    width: 100%;
+    object-fit: cover; /* Ensure images cover the carousel item */
+}
+.nav-item:hover{
+    border-bottom: solid seagreen;
+}
+h1{
+    text-align: center;
+    color: seagreen;
+}
+.foot{
+    background-color: seagreen;
+    text-align: center;
+    
+}

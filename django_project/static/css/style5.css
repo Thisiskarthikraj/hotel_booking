@@ -1,0 +1,55 @@
+/* style5.css */
+
+
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2.5rem;
+    color: seagreen;
+}
+
+.ul1 {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.li1 {
+    margin-bottom: 15px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.li1 a {
+    text-decoration: none;
+    color: seagreen;
+    font-weight: bold;
+}
+
+.li1 a:hover {
+    text-decoration: underline;
+}
+
+.li1:last-child {
+    margin-bottom: 0;
+}
+
+.li1.empty {
+    text-align: center;
+    color: seagreen;
+}
+
+@media screen and (max-width: 768px) {
+    ul {
+        width: 90%;
+    }
+}
+.foot{
+    background-color: seagreen;
+    text-align: center;
+    
+}

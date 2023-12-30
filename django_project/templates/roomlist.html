@@ -1,0 +1,51 @@
+{% load static %}
+{% include 'index.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room List</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add any other necessary CSS or static file links -->
+</head>
+<body>
+    <div class="container">
+        <h1>Room List</h1>
+        <span class="placeholder col-12 bg-success"></span>
+        <div class="row">
+            {% for room in object_list %}
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Room No:{{ room.room_number }}</h5>
+                            <p class="card-text">Description: {{ room.description }}</p>
+                            <p class="card-text">Capacity: {{ room.capacity }}</p>
+                            <p class="card-text">Price per Night: ${{ room.price_per_night }}</p>
+                            {% if user.is_authenticated %}
+                            <p><a href="{% url 'room_list' %}">Booking</a></p>
+                            {% else %}
+                            <p><a href="{% url 'login' %}">Booking</a></p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <footer>
+            <div class="foot">
+                <p class="foot">&copy; 2023 HotelX. All rights reserved</p>
+            </div> 
+            </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Add any other necessary scripts or static file links -->
+</body>
+</html>
